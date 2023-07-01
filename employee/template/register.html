@@ -1,0 +1,83 @@
+{%  include "base/base.html"  %}
+{% load static %}
+<style>
+  body{
+    background-image: url('{% static "/assets/forst.jpg" %}') !important;
+  }
+    .registration-form {
+      max-width: 400px;
+      margin: 0 auto;
+      color: aliceblue;
+      padding: 20px;
+      border-radius: 40px 10px 40px 10px;
+      border: 3px solid #6ba5f7;
+      margin-top: 50px;
+      box-shadow: 12px 12px 30px 5px rgba(224, 221, 221, 0.453);
+    }
+    .registration-form input{
+      border-radius: 20px;
+      
+      box-shadow: 5px 9px 10px 4px rgba(20, 20, 21, 0.1);
+    }
+    .registration-form button{
+      border-radius: 20px;
+      
+      box-shadow: 5px 9px 10px 4px rgba(20, 20, 21, 0.1);
+    }
+    .registration-form a{
+      border-radius: 20px;
+      
+      box-shadow: 5px 9px 10px 4px rgba(20, 20, 21, 0.1);
+    }
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-control {
+      border-radius: 3px;
+    }
+    .btn-register {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+  <div class="container">
+    
+    <div class="registration-form">
+      {% if messages %}
+      {% for message in messages %}
+          <div class=" {% if message.success %} alert alert-success {{ message.tags }} alert-dismissible fade show {% else %} alert alert-danger {{ message.tags }} alert-dismissible fade show{% endif %} " role="alert">
+              {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+      {% endfor %}
+  {% endif %}
+      <h2>Register</h2>
+      <form action="{% url 'register' %} " method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Enter Your username..." >
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email ID..." >
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter Your Password...">
+        </div>
+        <div class="mb-3">
+          <label for="confirm-password" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Enter Your conform password.. ">
+        </div>
+        <button type="submit" class="btn btn-primary btn-register">Register</button>
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <a  href="{% url 'login' %}" class="btn btn-primary btn-sm mt-1"> have Account Sign in !</a>
+  
+        </div>
+      </form>
+    </div>
+  </div>
+
+
