@@ -1,4 +1,4 @@
-# CRUD Operations in Python Django and jQuery Data table
+# CRUD Operations with Login module in Python Django and jQuery Data table
  * Project: Employee crud Operation
  * This is a crud operation performed on the employee list.
 # Prerequisites:
