@@ -34,6 +34,6 @@
 
 # Conclusion
 
- * I implemented basic CRUD operations using Python Django and jQuery.
+ * This is a employee list based CRUD operations performed using Python Django and jQuery..
 
  
