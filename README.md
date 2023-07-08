@@ -22,7 +22,7 @@
 
 
 # Read Operation
-   * On this page data Fatch in  the database ( Using MySQL database )
+   * On this page data Fetch in  the database ( Using MySQL database )
    * On this page given all buttons active like,  add employee, edit, delete, and the  Search bar,  on the right side for filtration  data
   <img src="static/assets/crud3.png" alt="Image " width="90%" height="30%">
 
