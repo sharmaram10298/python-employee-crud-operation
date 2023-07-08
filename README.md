@@ -4,7 +4,7 @@
 # Prerequisites:
  * Python installed on your machine (version 3.11.3 )
  * Django framework installed (version 4.2.1 )
- *  Bootstrap, CSS, Jquery, DataTable
+ *  Bootstrap, CSS, Jquery, DataTable, MySQL
 
 # Login page 
   *  login functionality 
