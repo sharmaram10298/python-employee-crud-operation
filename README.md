@@ -16,7 +16,7 @@
 <img src="static/assets/crud1.png" alt="Image " width="90%" height="30%">
 
 # Create Operation
-* Creating Employee list Form page hear
+* Creating Employee list Form page 
 * After the User login show this interface  and  show the username in the corner and the logout button
 <img src="static/assets/crud2.png" alt="Image " width="90%" height="30%">
 
